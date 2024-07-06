@@ -1,0 +1,76 @@
+/* styles.css */
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 800px; /* Aumentamos el ancho máximo */
+    width: 100%;
+    overflow: hidden; /* Evita que el contenido sobresalga del contenedor */
+    text-align: center; /* Centra el contenido del contenedor */
+    margin: auto; /* Centra el contenedor horizontalmente */
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+input, select, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.reportes {
+    margin-top: 20px;
+}
+
+.reportes button {
+    background-color: #007bff;
+}
+
+.reportes button:hover {
+    background-color: #0056b3;
+}
+
+pre {
+    background: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}

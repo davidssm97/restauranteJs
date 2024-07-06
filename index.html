@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Pedidos en el Restaurante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Pedidos en el Restaurante</h1>
+        
+        <form id="pedidoForm">
+            <label for="numeroMesa">Número de Mesa:</label>
+            <input type="number" id="numeroMesa" min="1" required>
+
+            <h3>Entradas</h3>
+            <select id="entrada">
+                <option value="">Seleccionar...</option>
+                <option value="Sopa">Sopa - 5000 COP</option>
+                <option value="Ensalada">Ensalada - 4000 COP</option>
+                <option value="Bruschetta">Bruschetta - 6000 COP</option>
+                <option value="Empanadas">Empanadas - 5000 COP</option>
+                <option value="Patacones">Patacones - 4500 COP</option>
+                <option value="Arepas">Arepas - 5500 COP</option>
+                <option value="Chorizo">Chorizo - 7000 COP</option>
+                <option value="Yuca Frita">Yuca Frita - 4000 COP</option>
+                <option value="Ceviche">Ceviche - 8000 COP</option>
+                <option value="Queso Fundido">Queso Fundido - 6500 COP</option>
+            </select>
+
+            <h3>Plato Principal</h3>
+            <select id="platoPrincipal">
+                <option value="">Seleccionar...</option>
+                <option value="Pasta">Pasta - 12000 COP</option>
+                <option value="Pizza">Pizza - 10000 COP</option>
+                <option value="Pollo">Pollo - 15000 COP</option>
+                <option value="Bandeja Paisa">Bandeja Paisa - 16000 COP</option>
+                <option value="Ajiaco">Ajiaco - 14000 COP</option>
+                <option value="Lechona">Lechona - 15000 COP</option>
+                <option value="Sancocho">Sancocho - 13000 COP</option>
+                <option value="Cazuela de Mariscos">Cazuela de Mariscos - 18000 COP</option>
+                <option value="Lomo Saltado">Lomo Saltado - 17000 COP</option>
+                <option value="Arroz con Pollo">Arroz con Pollo - 11000 COP</option>
+            </select>
+
+            <h3>Postre</h3>
+            <select id="postre">
+                <option value="">Seleccionar...</option>
+                <option value="Tiramisú">Tiramisú - 7000 COP</option>
+                <option value="Helado">Helado - 5000 COP</option>
+                <option value="Fruta">Fruta - 4000 COP</option>
+                <option value="Flan">Flan - 6000 COP</option>
+                <option value="Pastel de Tres Leches">Pastel de Tres Leches - 7500 COP</option>
+                <option value="Arroz con Leche">Arroz con Leche - 5500 COP</option>
+                <option value="Brownie">Brownie - 6500 COP</option>
+                <option value="Cheesecake">Cheesecake - 8000 COP</option>
+                <option value="Mousse de Chocolate">Mousse de Chocolate - 7000 COP</option>
+                <option value="Gelatina">Gelatina - 3500 COP</option>
+            </select>
+
+            <button type="submit">Realizar Pedido</button>
+        </form>
+
+        <div class="reportes">
+            <h2>Reportes</h2>
+            <button id="mostrarPedidos">Mostrar Pedidos</button>
+            <button id="mostrarIngresos">Mostrar Ingresos</button>
+            <button id="mostrarPedidosPorMesa">Mostrar Pedidos por Mesa</button>
+            <pre id="output"></pre>
+        </div>
+    </div>
+
+    <script src="gestionPedidos.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
