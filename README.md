@@ -14,9 +14,7 @@ Mostrar la cantidad de pedidos realizados por cada mesa, ordenados de mayor a me
 Tecnologías Utilizadas
 HTML5
 CSS3 (incluyendo Flexbox para el diseño)
-JavaScript
-
-
+JavaScript (ES6)
 Estructura del Proyecto
 |-- index.html        # Archivo principal HTML que contiene la estructura de la página
 |-- styles.css        # Hoja de estilos CSS para estilizar la aplicación
